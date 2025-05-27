@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cheater Report</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f4f4f4;
+    }
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 1.5rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Cheater Report Submission</h1>
+<form id="report-form">
+  <label for="id">ID</label>
+  <input type="text" id="id" name="id" required minlength="36" maxlength="36" placeholder="Enter 36-character ID" />
+
+  <label for="region">Region</label>
+  <select id="region" name="region" required>
+    <option value="">Select a region</option>
+    <option>Europe</option>
+    <option>South America</option>
+    <option>North America</option>
+    <option>Oceania</option>
+    <option>Asia</option>
+    <option>Middle Eastern</option>
+  </select>
+
+  <label for="details">Details</label>
+  <textarea id="details" name="details" rows="4" placeholder="Describe the incident..." required></textarea>
+
+  <button type="submit">Submit Report</button>
+</form>
+
+</body>
+</html>
