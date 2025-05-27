@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4366138242463784"
+     crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Report cheaters anonymously and securely." />
+  <title>Cheater Report</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #eef2f7;
+      color: #333;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    main {
+      max-width: 600px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 1.2rem;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    textarea {
+      resize: vertical;
+    }
+    button {
+      margin-top: 1.5rem;
+      background-color: #1d4ed8;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2563eb;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: #f1f5f9;
+    }
+    footer a {
+      color: #1d4ed8;
+      text-decoration: none;
+      margin: 0 12px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Cheater Report</h1>
+  <p>Submit anonymous reports of cheaters. Help keep the community clean.</p>
+</header>
+
+<main>
+  <form id="report-form">
+    <label for="id">ID</label>
+    <input type="text" id="id" name="id" required minlength="36" maxlength="36" placeholder="Enter 36-character ID" />
+
+    <label for="region">Region</label>
+    <select id="region" name="region" required>
+      <option value="">Select a region</option>
+      <option>Europe</option>
+      <option>South America</option>
+      <option>North America</option>
+      <option>Oceania</option>
+      <option>Asia</option>
+      <option>Middle Eastern</option>
+    </select>
+
+    <label for="details">Cheater Username + Details</label>
+    <textarea id="details" name="details" rows="5" placeholder="e.g. Username123 was using exploits in Ranked Match on May 21st..." required></textarea>
+
+    <button type="submit">Submit Report</button>
+  </form>
+</main>
+
+<footer>
+  <p>
+    <a href="about.html">About</a> |
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="contact.html">Contact</a>
+  </p>
+</footer>
+
+</body>
+</html>
